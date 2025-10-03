@@ -8,32 +8,14 @@
 <title>Madgwick's Dream: An Executive Sponsor Simulation</title>
 <meta content="Madgwick's Dream: An Executive Sponsor Simulation" property="og:title"/>
 <meta content="An engaging, fun but challenging app for UNE execs to learn about the Portfolio and Project Management Framework (PPMF)." property="og:description"/>
-<meta content="assets/img_202cea19.png" property="og:image"/>
+<meta content="assets/img_4bf78c48.png" property="og:image"/>
 <meta content="website" property="og:type"/>
 <link href="assets/sprite_64x64_2a0aca21.png" rel="icon" type="image/x-icon"/>
-<script src="assets/script_bf8eb572.js"></script>
-<link href="assets/style_1106f4bb.css" rel="stylesheet"/>
-<link href="assets/style_41685317.css" rel="stylesheet"/>
-<script crossorigin="" src="assets/script_5134c6b9.js"></script>
+<script src="assets/script_26d12b49.js"></script>
+<link href="assets/style_60c98b3b.css" rel="stylesheet"/>
+<link href="assets/style_3578f779.css" rel="stylesheet"/>
+<script crossorigin="anonymous" src="assets/script_3141ad03.js"></script>
 <style>
-        @font-face {
-            font-family: 'Font Awesome 6 Free';
-            font-path: '/chat/webfonts/fa-regular-400';
-            src: url('/chat/webfonts/fa-regular-400.woff2') format('woff2'),
-                url('/chat/webfonts/fa-regular-400.ttf') format('truetype');
-        }
-        @font-face {
-            font-family: 'Font Awesome 6 Free';
-            font-path: '/chat/webfonts/fa-solid-900';
-            src: url('/chat/webfonts/fa-solid-900.woff2') format('woff2'),
-                url('/chat/webfonts/fa-solid-900.ttf') format('truetype');
-        }
-        @font-face {
-            font-family: 'Font Awesome 6 Brands';
-            font-path: '/chat/webfonts/fa-brands-400';
-            src: url('/chat/webfonts/fa-brands-400.woff2') format('woff2'),
-                url('/chat/webfonts/fa-brands-400.ttf') format('truetype');
-        }
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
     
         body {
@@ -48,9 +30,6 @@
         .font-display {
             font-family: 'Poppins', sans-serif;
             font-weight: 800;
-        }
-        .animate-fade-in {
-            animation: fadeIn 0.8s ease-in-out;
         }
         .glass-card {
             background: rgba(13, 47, 79, 0.6); /* Darker UNE Blue transparent */
@@ -99,12 +78,15 @@
                 deliveryFocus: 5,
             },
         };
+        
+        const sponsorImageURL = 'https://res.cloudinary.com/dimqqmfx6/image/upload/v1759450937/u1003002214_superherov2_z2fwp2.png';
+        const sponsorHeadshotURL = 'https://res.cloudinary.com/dimqqmfx6/image/upload/c_thumb,g_face,w_80,h_80,r_max/v1759450937/u1003002214_superherov2_z2fwp2.png';
 
         const gameData = [
             {
                 type: 'cover',
                 title: 'Your Role: Champion, Guardian and Guide',
-                image: 'https://res.cloudinary.com/dimqqmfx6/image/upload/v1759389783/u1002072205_sponsorimage_qgypsl.jpg',
+                image: sponsorImageURL,
                 cta: 'Explore your Accountabilities <i class="fas fa-arrow-right ml-2"></i>',
             },
             {
@@ -127,7 +109,7 @@
                 title: 'Setting the Scene: Madgwick\'s Dream',
                 text: `
                     <p class="mb-4 text-lg text-gray-200">As a member of the UNE Executive, you are a steward of the university's strategy and resources. This simulation places you in the role of a sponsoring executive responsible for guiding a major strategic initiative, <strong class="text-[#FDB913]">Madgwick's Dream</strong>, from a spark of an idea to a tangible university asset.</p>
-                    <p class="mb-4 text-lg text-gray-200">This is no mere upgrade. Madgwick's Dream envisions a groundbreaking, sentient Digital Campus. It proposes a fully immersive, AI-driven ecosystem that not only creates hyper-personalised learning pathways in real-time but also anticipates student needs, provides cognitive support, and generates novel research insights autonomously. It's a high-risk, paradigm-shifting initiative.</p>
+                    <p class="mb-4 text-lg text-gray-200">Madgwick's Dream honours our pioneering vision from 70 years ago: to reimagine how a university can serve the needs of regional people. It’s founded on the belief that geography is no barrier to aspiration and that communities thrive through the power of knowledge. The project aims to create a transformative Digital Learning Ecosystem, using AI to provide incredible personalised learning paths for every student. It is a high-risk, high-reward major strategic initiative.</p>
                     <p class="text-lg text-gray-200">Your choices will be difficult and will rarely have a single correct answer. Your goal is not to find the perfect path, but to navigate the complex trade-offs. Your performance will be analysed to provide personalised feedback on your sponsorship style, linking back to the UNE PPMF.</p>
                 `,
                 cta: 'Begin the Simulation',
@@ -148,7 +130,7 @@
                 type: 'decision',
                 title: "Securing Strategic Investment",
                 stageLabel: "PPMF Stage: Initiation",
-                scenario: "When the Project Delivery Group (PDG) presents its investment recommendations to the Executive, they recommend proceeding with 'Madgwick's Dream'. It's a significant ask. How do you support the recommendation and secure formal approval to develop the Business Case?",
+                scenario: "When the Project Delivery Group (PDG) presents its investment recommendations to the Executive, they recommend proceeding with Madgwick's Dream. It's a significant ask. How do you support the recommendation and secure formal approval to develop the Business Case?",
                 advice: "The PDG provides assurance on process, but you provide the strategic conviction. Your role is to reinforce their recommendation with executive authority and vision.",
                 choices: [
                     { text: "Publicly endorse the PDG's recommendation, focusing on the project's direct alignment with university strategy and its potential for transformational change.", scores: { strategicIntegrity: 2, governanceAdherence: 1, stakeholderCollaboration: 1, deliveryFocus: 0 } },
@@ -159,30 +141,31 @@
             {
                 type: 'decision',
                 title: "Peer-Proofing the Business Case",
-                stageLabel: "PPMF Stage: Planning (Business Case)",
-                scenario: "The formal Business Case (BC) is ready for your endorsement. You are reviewing the \"Benefits Realisation\" section, which outlines the project's expected value. What is your primary focus before you endorse it?",
+                stageLabel: "PPMF Stage: Planning",
+                scenario: "The formal Business Case (BC) is ready for your endorsement. You are reviewing the Benefits Realisation section, which outlines the project's expected value. What is your primary focus before you endorse it?",
                 advice: "A sponsor's job is to ask the hard questions *before* their colleagues do. A weak business case reflects on you.",
                 choices: [
                     { text: 'Trust that the team has the details right and endorse the document quickly to maintain momentum.', scores: { strategicIntegrity: -2, governanceAdherence: -1, stakeholderCollaboration: 0, deliveryFocus: 1 } },
                     { text: 'Push your team to define concrete, measurable metrics (e.g., a 10% increase in student satisfaction scores, a 5% reduction in attrition).', scores: { strategicIntegrity: 2, governanceAdherence: 1, stakeholderCollaboration: 0, deliveryFocus: 0 } },
+                    { text: 'Focus on the narrative. Check that the benefits are described in a compelling way that will resonate with the Executive Team.', scores: { strategicIntegrity: 0, governanceAdherence: -1, stakeholderCollaboration: 1, deliveryFocus: -1 } }
                 ]
             },
             {
                 type: 'decision',
                 title: "The Dilemma of Speed vs. Governance",
-                stageLabel: "PPMF Stage: Planning (Business Case)",
+                stageLabel: "PPMF Stage: Planning",
                 scenario: "You notice the BC timeline is extremely aggressive, conditional on bypassing some standard governance review gates to maintain momentum. How do you proceed?",
                 advice: "Being a sponsor means knowing which rules can be bent and which will break you. Governance isn't red tape; it's a safety net.",
                 choices: [
-                    { text: '(The Accelerator) Endorse the BC as is. The opportunity is huge, and speed is critical. You accept the risk.', scores: { strategicIntegrity: -1, governanceAdherence: -2, stakeholderCollaboration: 0, deliveryFocus: 2 } },
-                    { text: '(The Governor) Refuse to endorse until the timeline is reworked to be more conservative and fully compliant with the PPMF.', scores: { strategicIntegrity: 0, governanceAdherence: 2, stakeholderCollaboration: 0, deliveryFocus: -2 } },
-                    { text: '(The Negotiator) Endorse the BC, but commit to proactively negotiating a formal "hybrid" governance model with the Project Delivery Group (PDG).', scores: { strategicIntegrity: 1, governanceAdherence: 1, stakeholderCollaboration: 2, deliveryFocus: 1 } },
+                    { text: 'Endorse the BC as is. The opportunity is huge, and speed is critical. You accept the risk and will manage the fallout.', scores: { strategicIntegrity: -1, governanceAdherence: -2, stakeholderCollaboration: 0, deliveryFocus: 2 } },
+                    { text: 'Refuse to endorse until the timeline is reworked to be more conservative and fully compliant with the PPMF.', scores: { strategicIntegrity: 0, governanceAdherence: 2, stakeholderCollaboration: 0, deliveryFocus: -2 } },
+                    { text: 'Endorse the BC, but commit to proactively negotiating a formal "hybrid" governance model with the Project Delivery Group (PDG).', scores: { strategicIntegrity: 1, governanceAdherence: 1, stakeholderCollaboration: 2, deliveryFocus: 1 } },
                 ]
             },
              {
                 type: 'qna',
                 title: "Leading the Investment Decision",
-                stageLabel: "PPMF Stage: Planning (Investment Decision)",
+                stageLabel: "PPMF Stage: Planning",
                 scenario: "The BC is on the Executive Team agenda for a final funding decision. You must defend the proposal. Prepare for rapid-fire questions from your peers.",
                 advice: "Facing your peers is a true test. Your detailed knowledge of the Business Case is your best defence. You are not just presenting; you are owning it.",
                 questions: [
@@ -200,8 +183,8 @@
                         query: "Your project requires key personnel from my portfolio's 'Student Support Redesign' initiative. How do you propose we handle this resource contention without jeopardising my core deliverables?",
                         choices: [
                             { text: "Madgwick's Dream is the university's top priority. We'll need those resources, and other initiatives may need to be de-prioritised.", scores: { strategicIntegrity: 0, governanceAdherence: -1, stakeholderCollaboration: -2, deliveryFocus: 2 } },
-                            { text: "The project team has mapped the dependencies. I propose a joint planning session between our teams to create an integrated resource plan that serves both projects effectively.", scores: { strategicIntegrity: 1, governanceAdherence: 1, stakeholderCollaboration: 2, deliveryFocus: 0 } },
-                            { text: "I'll ask our project managers to resolve this at an operational level first. We should trust them to find a solution, and I'll ask them to escalate to us only if they reach an impasse.", scores: { strategicIntegrity: -1, governanceAdherence: 0, stakeholderCollaboration: -1, deliveryFocus: 0 } }
+                            { text: "The team has mapped the dependencies. I propose a joint planning session between our teams to create an integrated resource plan that serves both projects effectively.", scores: { strategicIntegrity: 1, governanceAdherence: 1, stakeholderCollaboration: 2, deliveryFocus: 0 } },
+                            { text: "I'll ask our project managers to resolve this at an operational level first. Let's trust them to find a solution, and I'll ask them to escalate to us only if they reach an impasse.", scores: { strategicIntegrity: -1, governanceAdherence: 0, stakeholderCollaboration: -1, deliveryFocus: 0 } }
                         ]
                     },
                     {
@@ -220,12 +203,12 @@
                 type: 'decision',
                 title: "The Cross-Portfolio Conflict",
                 stageLabel: "PPMF Stage: Execution & Control",
-                scenario: "The project is funded and live. You are Chair of the Steering Committee. A critical enterprise architecture team from the EDFSET's portfolio is needed, but they are allocated to a project for the EP-Student Journey. You are two weeks from a stage gate review you will fail without this team.",
+                scenario: "The project is live. A team of leading learning designers from the Education Futures portfolio, critical for developing the AI's pedagogical core, is suddenly pulled onto an urgent, competing initiative by their Executive Dean. This blindsides your Project Manager and threatens to derail the current development sprint.",
                 advice: "This is where sponsorship moves from theory to practice. Your job is to clear roadblocks the Project Manager can't.",
                 choices: [
-                    { text: '(The Pragmatist) Use your political capital. Call the EDFSET and ask them to solve the problem for you "off-line" as a personal favour.', scores: { strategicIntegrity: 0, governanceAdherence: -1, stakeholderCollaboration: 1, deliveryFocus: 1 } },
-                    { text: '(The Conciliator) Immediately call an informal meeting with both the EDFSET and the EP-Student Journey to broker a three-way solution together.', scores: { strategicIntegrity: 1, governanceAdherence: 0, stakeholderCollaboration: 2, deliveryFocus: 0 } },
-                    { text: '(The Formalist) Escalate the issue via the formal PPMF risk process, knowing this means you will fail the upcoming review and your project will be flagged as "red".', scores: { strategicIntegrity: -1, governanceAdherence: 2, stakeholderCollaboration: -1, deliveryFocus: -2 } },
+                    { text: 'Use your executive authority. Call the Executive Dean and insist they return the resources, citing the strategic priority of your project and the executive\'s prior endorsement.', scores: { strategicIntegrity: 0, governanceAdherence: -1, stakeholderCollaboration: -2, deliveryFocus: 2 } },
+                    { text: 'Table the issue for the next Steering Committee, asking the PM to document the impact. Trust the formal governance process to resolve the conflict, even if it causes a delay.', scores: { strategicIntegrity: -1, governanceAdherence: 2, stakeholderCollaboration: -1, deliveryFocus: -2 } },
+                    { text: 'Immediately call an informal meeting with the Executive Dean. Seek to understand their urgent need and collaboratively broker a solution, like a temporary resource-sharing plan or re-phasing your project\'s dependency.', scores: { strategicIntegrity: 1, governanceAdherence: 0, stakeholderCollaboration: 2, deliveryFocus: 0 } },
                 ]
             },
             {
@@ -235,9 +218,9 @@
                 scenario: "A powerful and influential Executive Dean on your Steering Committee demands a popular new feature. It's a good idea, but it's not in the original scope and will add 15% to the cost and delay the project by three months.",
                 advice: "Being a sponsor is tough. You must protect the project's core objectives, even from powerful, well-intentioned stakeholders.",
                 choices: [
-                    { text: 'Approve the change immediately. Keeping a key stakeholder happy is paramount, and the feature adds value.', scores: { strategicIntegrity: -2, governanceAdherence: -2, stakeholderCollaboration: 2, deliveryFocus: -1 } },
-                    { text: 'Firmly reject the request, stating that the project must adhere to the approved Business Case to protect the timeline and budget.', scores: { strategicIntegrity: 1, governanceAdherence: 1, stakeholderCollaboration: -2, deliveryFocus: 1 } },
-                    { text: 'Acknowledge the value of the idea, but require the Executive Dean to submit a formal change request through the governance process, including a revised value proposition to justify the extra cost and delay.', scores: { strategicIntegrity: 2, governanceAdherence: 2, stakeholderCollaboration: 1, deliveryFocus: 0 } },
+                    { text: "Agree in principle. The Dean's support is critical, and the feature is popular. You ask the PM to start analysis immediately to show goodwill, while deferring the formal budget conversation.", scores: { strategicIntegrity: -1, governanceAdherence: -1, stakeholderCollaboration: 2, deliveryFocus: -1 } },
+                    { text: "Acknowledge the idea's merit but hold firm. Explain that your primary duty as sponsor is to protect the agreed-upon scope, budget, and timeline for the *entire university*. Offer to champion the idea as a top candidate for Phase 2.", scores: { strategicIntegrity: 1, governanceAdherence: 1, stakeholderCollaboration: -2, deliveryFocus: 1 } },
+                    { text: "Thank the Dean for the valuable input and direct them to the formal change control process. State that any change with budget or timeline impact must be transparently assessed and approved by the Steering Committee as a whole.", scores: { strategicIntegrity: 2, governanceAdherence: 2, stakeholderCollaboration: 1, deliveryFocus: 0 } },
                 ]
             },
             {
@@ -247,9 +230,9 @@
                 scenario: "A quarterly review shows the project is on schedule and budget. However, early user testing indicates adoption may be low, putting the core benefits at risk. The team is focused on technical delivery.",
                 advice: "Delivering a system nobody uses isn't success. A sponsor owns the *outcome*, not just the output.",
                 choices: [
-                    { text: 'Maintain focus on delivering the core technical MVP. The business case allocated separate, post-launch funding for change management, and we must protect the delivery budget.', scores: { strategicIntegrity: 0, governanceAdherence: 1, stakeholderCollaboration: -1, deliveryFocus: 2 } },
-                    { text: 'Authorise the reallocation of 10% of the remaining project budget from technical delivery to a dedicated change management and user adoption stream.', scores: { strategicIntegrity: 2, governanceAdherence: 1, stakeholderCollaboration: 1, deliveryFocus: -1 } },
-                    { text: 'Direct the project team to integrate change management activities into their existing duties, empowering them to be "change champions" without reallocating the budget.', scores: { strategicIntegrity: -1, governanceAdherence: -1, stakeholderCollaboration: 0, deliveryFocus: 0 } },
+                    { text: 'Hold the line. The business case was approved with a specific budget for technical delivery and a separate plan for post-launch adoption. Your role is to deliver on that original commitment without overspending the project funds.', scores: { strategicIntegrity: 0, governanceAdherence: 1, stakeholderCollaboration: -1, deliveryFocus: 2 } },
+                    { text: 'Act decisively. Authorise the Project Manager to pivot and reallocate up to 10% of the remaining budget to an urgent user adoption and change management workstream. An unused system is a failed project, regardless of budget.', scores: { strategicIntegrity: 2, governanceAdherence: 1, stakeholderCollaboration: 1, deliveryFocus: -1 } },
+                    { text: 'Bring the adoption risk to the Steering Committee. Facilitate a workshop to co-design a low-cost, high-impact adoption plan that leverages existing university resources and communication channels, rather than touching the project budget.', scores: { strategicIntegrity: 1, governanceAdherence: 0, stakeholderCollaboration: 2, deliveryFocus: -1 } },
                 ]
             },
             {
@@ -278,11 +261,10 @@
         
             let content = '';
             const mainButtonClasses = "bg-[#FDB913] hover:bg-yellow-400 text-[#0d2f4f] font-bold py-3 px-8 rounded-full text-xl transition-all transform hover:scale-105 shadow-lg focus:outline-none focus:ring-4 focus:ring-yellow-300/50";
-            const sponsorImageURL = 'https://res.cloudinary.com/dimqqmfx6/image/upload/e_background_removal/v1759391203/u1002074636_superhero_a2jy5y.png';
-
+            
             if (stage.type === 'cover') {
                 content = `
-                    <div class="w-full max-w-4xl text-center animate-fade-in">
+                    <div class="w-full max-w-4xl text-center animate__animated animate__fadeIn">
                         <img src="${stage.image}" alt="Executive Sponsor" class="w-64 h-64 md:w-80 md:h-80 object-contain mx-auto mb-6 drop-shadow-[0_10px_15px_rgba(0,0,0,0.4)]">
                         <h1 class="font-display text-4xl md:text-6xl font-bold text-white mb-2 tracking-wide">${stage.title}</h1>
                         <p class="text-xl md:text-2xl text-[#8CC63F] mb-8">A UNE Executive Sponsor Simulation</p>
@@ -293,7 +275,7 @@
                 `;
             } else if (stage.type === 'ppmf_intro' || stage.type === 'preamble') {
                  content = `
-                    <div class="w-full max-w-5xl glass-card p-8 sm:p-12 rounded-2xl shadow-2xl animate-fade-in">
+                    <div class="w-full max-w-5xl glass-card p-8 sm:p-12 rounded-2xl shadow-2xl animate__animated animate__fadeIn">
                        <div class="grid md:grid-cols-5 gap-10 items-center">
                             <div class="md:col-span-3">
                                 <h2 class="text-3xl md:text-4xl font-display font-bold mb-6 text-[#FDB913]">${stage.title}</h2>
@@ -313,7 +295,7 @@
             } else if (stage.type === 'decision') {
                 const adviceHTML = `
                     <div class="mt-8 bg-[#0d2f4f]/60 p-4 rounded-xl flex items-center gap-4 border border-[#FDB913]/30">
-                        <img src="https://res.cloudinary.com/dimqqmfx6/image/upload/e_background_removal,c_thumb,w_80,h_80,g_face/v1759391203/u1002074636_superhero_a2jy5y.png" alt="Sponsor Advice" class="w-20 h-20 object-contain">
+                        <img src="${sponsorHeadshotURL}" alt="Sponsor Advice" class="w-20 h-20 object-contain rounded-full">
                         <div>
                             <p class="font-bold text-lg text-[#FDB913]">Sponsor's Wisdom:</p>
                             <p class="text-gray-200 italic">"${stage.advice}"</p>
@@ -321,7 +303,7 @@
                     </div>
                 `;
                 content = `
-                    <div class="w-full max-w-5xl glass-card p-8 sm:p-10 rounded-2xl shadow-2xl animate-fade-in">
+                    <div class="w-full max-w-5xl glass-card p-8 sm:p-10 rounded-2xl shadow-2xl animate__animated animate__fadeIn">
                         <div class="grid md:grid-cols-2 gap-8 md:gap-12">
                             <div>
                                 <h2 class="text-2xl md:text-3xl font-display font-bold mb-1 text-[#FDB913]">${stage.title}</h2>
@@ -354,7 +336,7 @@
             const question = stage.questions[currentQna];
             const adviceHTML = `
                 <div class="mt-8 bg-[#0d2f4f]/60 p-4 rounded-xl flex items-center gap-4 border border-[#FDB913]/30">
-                    <img src="https://res.cloudinary.com/dimqqmfx6/image/upload/e_background_removal,c_thumb,w_80,h_80,g_face/v1759391203/u1002074636_superhero_a2jy5y.png" alt="Sponsor Advice" class="w-20 h-20 object-contain">
+                    <img src="${sponsorHeadshotURL}" alt="Sponsor Advice" class="w-20 h-20 object-contain rounded-full">
                     <div>
                         <p class="font-bold text-lg text-[#FDB913]">Sponsor's Wisdom:</p>
                         <p class="text-gray-200 italic">"${stage.advice}"</p>
@@ -363,7 +345,7 @@
             `;
 
             return `
-                <div id="qna-card" class="w-full max-w-5xl glass-card p-8 sm:p-10 rounded-2xl shadow-2xl animate-fade-in">
+                <div id="qna-card" class="w-full max-w-5xl glass-card p-8 sm:p-10 rounded-2xl shadow-2xl animate__animated animate__fadeIn">
                      <div class="grid md:grid-cols-2 gap-8 md:gap-12">
                         <div>
                             <h2 class="text-2xl md:text-3xl font-display font-bold mb-1 text-[#FDB913]">${stage.title}</h2>
@@ -396,10 +378,10 @@
             currentQna++;
             if (currentQna < stage.questions.length) {
                 const card = document.getElementById('qna-card');
-                card.classList.remove('animate-fade-in');
+                card.classList.remove('animate__fadeIn');
                 void card.offsetWidth; // Trigger reflow
-                card.classList.add('animate-fade-in');
-                card.innerHTML = renderQnaQuestion().replace('<div id="qna-card" ... >', '').slice(0, -6);
+                card.classList.add('animate__fadeIn');
+                card.innerHTML = renderQnaQuestion().replace('<div id="qna-card" class="w-full max-w-5xl glass-card p-8 sm:p-10 rounded-2xl shadow-2xl animate__animated animate__fadeIn">', '').slice(0, -6);
             } else {
                 handleChoice();
             }
@@ -455,6 +437,11 @@
             const scoreBars = Object.entries(scores).map(([key, value]) => {
                 const labels = { strategicIntegrity: 'Strategic Integrity', governanceAdherence: 'Governance Adherence', stakeholderCollaboration: 'Stakeholder Collaboration', deliveryFocus: 'Delivery Focus' };
                 const colors = { strategicIntegrity: 'bg-blue-500', governanceAdherence: 'bg-[#8CC63F]', stakeholderCollaboration: 'bg-[#FDB913]', deliveryFocus: 'bg-red-500' };
+                // Animate width on render
+                setTimeout(() => {
+                    const bar = document.getElementById(`bar-${key}`);
+                    if (bar) bar.style.width = `${value * 10}%`;
+                }, 100);
                 return `
                     <div class="mb-4">
                         <div class="flex justify-between mb-1">
@@ -462,14 +449,14 @@
                             <span class="text-sm font-medium text-white">${value}/10</span>
                         </div>
                         <div class="w-full bg-gray-700/50 rounded-full h-4">
-                            <div class="${colors[key]} h-4 rounded-full progress-bar-inner" style="width: ${value * 10}%"></div>
+                            <div id="bar-${key}" class="${colors[key]} h-4 rounded-full progress-bar-inner" style="width: 0%"></div>
                         </div>
                     </div>
                 `;
             }).join('');
 
             return `
-                <div class="w-full max-w-5xl glass-card p-8 sm:p-10 rounded-2xl shadow-2xl animate-fade-in">
+                <div class="w-full max-w-5xl glass-card p-8 sm:p-10 rounded-2xl shadow-2xl animate__animated animate__fadeIn">
                     <h2 class="text-3xl md:text-4xl font-display font-bold mb-6 text-center text-[#FDB913]">Simulation Complete: Your Sponsor Profile</h2>
                     <div class="grid md:grid-cols-2 gap-8">
                         <div>
