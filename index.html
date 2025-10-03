@@ -8,13 +8,13 @@
 <title>Madgwick's Dream: An Executive Sponsor Simulation</title>
 <meta content="Madgwick's Dream: An Executive Sponsor Simulation" property="og:title"/>
 <meta content="An engaging, fun but challenging app for UNE execs to learn about the Portfolio and Project Management Framework (PPMF)." property="og:description"/>
-<meta content="assets/img_4bf78c48.png" property="og:image"/>
+<meta content="assets/img_e6e2bc8e.png" property="og:image"/>
 <meta content="website" property="og:type"/>
 <link href="assets/sprite_64x64_2a0aca21.png" rel="icon" type="image/x-icon"/>
-<script src="assets/script_26d12b49.js"></script>
-<link href="assets/style_60c98b3b.css" rel="stylesheet"/>
-<link href="assets/style_3578f779.css" rel="stylesheet"/>
-<script crossorigin="anonymous" src="assets/script_3141ad03.js"></script>
+<script src="assets/script_3102734f.js"></script>
+<link href="assets/style_0c2f00e9.css" rel="stylesheet"/>
+<link href="assets/style_2013dcf9.css" rel="stylesheet"/>
+<script crossorigin="anonymous" src="assets/script_631e1e32.js"></script>
 <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
     
@@ -79,8 +79,8 @@
             },
         };
         
-        const sponsorImageURL = 'https://res.cloudinary.com/dimqqmfx6/image/upload/v1759450937/u1003002214_superherov2_z2fwp2.png';
-        const sponsorHeadshotURL = 'https://res.cloudinary.com/dimqqmfx6/image/upload/c_thumb,g_face,w_80,h_80,r_max/v1759450937/u1003002214_superherov2_z2fwp2.png';
+        const sponsorImageURL = 'https://res.cloudinary.com/dimqqmfx6/image/upload/v1759451475/u1003003111_img_202cea19_vo5tcg.png';
+        const sponsorHeadshotURL = 'https://res.cloudinary.com/dimqqmfx6/image/upload/c_thumb,g_face,w_80,h_80,r_max/v1759451475/u1003003111_img_202cea19_vo5tcg.png';
 
         const gameData = [
             {
@@ -93,7 +93,7 @@
                 type: 'ppmf_intro',
                 title: 'Understanding the PPMF & Your Role as Sponsor',
                 text: `
-                    <p class="mb-6 text-lg text-gray-200">The UNE Portfolio and Project Management Framework (PPMF) is the university's single source of truth for delivering strategic change. It provides the structure, processes, and governance to ensure projects are aligned with strategy, are well-managed, and deliver their intended value.</p>
+                    <p class="mb-6 text-lg text-gray-200">The UNE Portfolio and Project Management Framework (PPMF) is the university's guiding framework for delivering strategic change. It provides the structure, processes, and governance to ensure projects are aligned with strategy, are well-managed, and deliver their intended value.</p>
                     <p class="mb-4 font-bold text-xl text-white">As an Executive Sponsor, you are the most critical role in this framework. You are not a spectator; you are an active, accountable leader. Your primary responsibilities are:</p>
                     <ul class="space-y-4 text-lg">
                         <li class="flex items-start"><i class="fas fa-bullseye text-[#8CC63F] fa-fw mt-1 mr-3 text-2xl"></i><div><strong class="text-[#FDB913]">Champion the Vision:</strong> Articulate the project's strategic importance and secure buy-in across the university.</div></li>
@@ -121,7 +121,7 @@
                 scenario: "A passionate team from your portfolio presents the high-level concept for Madgwick's Dream. The energy is high, but the details are thin. As the idea's potential sponsor, you must act as its most rigorous challenger. What is your primary line of questioning?",
                 advice: "The first challenge is the most important: protecting the university's resources from a promising but unvetted idea.",
                 choices: [
-                    { text: '"How does this directly align with our top three strategic goals outlined in the university\'s 5-year plan?"', scores: { strategicIntegrity: 2, governanceAdherence: 1, stakeholderCollaboration: 0, deliveryFocus: 0 } },
+                    { text: '"How does this align with the priorities described in our strategic plan and our committed longer term vision?"', scores: { strategicIntegrity: 2, governanceAdherence: 1, stakeholderCollaboration: 0, deliveryFocus: 0 } },
                     { text: '"What\'s the \'wow\' factor here? How will this capture the imagination of students and staff and differentiate us?"', scores: { strategicIntegrity: 0, governanceAdherence: -1, stakeholderCollaboration: 1, deliveryFocus: 1 } },
                     { text: '"Let\'s be pragmatic. What\'s the absolute minimum budget you\'d need to get a prototype built to test the core assumption?"', scores: { strategicIntegrity: -1, governanceAdherence: 0, stakeholderCollaboration: 0, deliveryFocus: 2 } },
                 ]
@@ -133,9 +133,9 @@
                 scenario: "When the Project Delivery Group (PDG) presents its investment recommendations to the Executive, they recommend proceeding with Madgwick's Dream. It's a significant ask. How do you support the recommendation and secure formal approval to develop the Business Case?",
                 advice: "The PDG provides assurance on process, but you provide the strategic conviction. Your role is to reinforce their recommendation with executive authority and vision.",
                 choices: [
-                    { text: "Publicly endorse the PDG's recommendation, focusing on the project's direct alignment with university strategy and its potential for transformational change.", scores: { strategicIntegrity: 2, governanceAdherence: 1, stakeholderCollaboration: 1, deliveryFocus: 0 } },
-                    { text: "Rely on your executive authority and personal conviction, asking your peers to trust your judgement and the passion of your team.", scores: { strategicIntegrity: -1, governanceAdherence: -1, stakeholderCollaboration: 0, deliveryFocus: 1 } },
-                    { text: "Acknowledge the significant investment and suggest deferring the decision until you can have more one-on-one conversations to build individual consensus.", scores: { strategicIntegrity: 0, governanceAdherence: -2, stakeholderCollaboration: 2, deliveryFocus: -1 } },
+                    { text: "Objectively support the PDG's recommendation, reinforcing its strategic alignment and potential ROI, while acknowledging the identified risks.", scores: { strategicIntegrity: 2, governanceAdherence: 1, stakeholderCollaboration: 1, deliveryFocus: 0 } },
+                    { text: "Passionately advocate for the project, sharing compelling anecdotes about its potential to change lives and asking your peers to back your vision.", scores: { strategicIntegrity: -1, governanceAdherence: -1, stakeholderCollaboration: 1, deliveryFocus: 1 } },
+                    { text: "Acknowledge the project's appeal, but state that given current resource constraints and other strategic priorities, now is not the right time. Recommend placing it on a 'strategic watch list' for future consideration.", scores: { strategicIntegrity: 1, governanceAdherence: 2, stakeholderCollaboration: -1, deliveryFocus: -2 } },
                 ]
             },
             {
@@ -145,9 +145,9 @@
                 scenario: "The formal Business Case (BC) is ready for your endorsement. You are reviewing the Benefits Realisation section, which outlines the project's expected value. What is your primary focus before you endorse it?",
                 advice: "A sponsor's job is to ask the hard questions *before* their colleagues do. A weak business case reflects on you.",
                 choices: [
-                    { text: 'Trust that the team has the details right and endorse the document quickly to maintain momentum.', scores: { strategicIntegrity: -2, governanceAdherence: -1, stakeholderCollaboration: 0, deliveryFocus: 1 } },
-                    { text: 'Push your team to define concrete, measurable metrics (e.g., a 10% increase in student satisfaction scores, a 5% reduction in attrition).', scores: { strategicIntegrity: 2, governanceAdherence: 1, stakeholderCollaboration: 0, deliveryFocus: 0 } },
-                    { text: 'Focus on the narrative. Check that the benefits are described in a compelling way that will resonate with the Executive Team.', scores: { strategicIntegrity: 0, governanceAdherence: -1, stakeholderCollaboration: 1, deliveryFocus: -1 } }
+                    { text: 'Focus on the high-level strategic narrative. As long as the story is compelling and aligns with the vision, you\'re comfortable endorsing it, leaving the detailed metrics to the project team.', scores: { strategicIntegrity: -1, governanceAdherence: -1, stakeholderCollaboration: 1, deliveryFocus: 0 } },
+                    { text: 'Challenge the team to refine the benefits. Insist on specific, measurable, and time-bound targets, such as a 7.9% increase in student retention and a 3.7% improvement in graduate employment rates within two years.', scores: { strategicIntegrity: 2, governanceAdherence: 1, stakeholderCollaboration: 0, deliveryFocus: 1 } },
+                    { text: 'Endorse the business case but add a personal note of caution about the benefits, suggesting they should be treated as aspirational goals rather than firm commitments at this stage.', scores: { strategicIntegrity: -2, governanceAdherence: 0, stakeholderCollaboration: -1, deliveryFocus: -1 } }
                 ]
             },
             {
@@ -189,7 +189,7 @@
                     },
                     {
                         asker: "The Vice-Chancellor (VC)",
-                        query: "This is a bold, ambitious vision, which I applaud. But boldness can become recklessness. Beyond the business case, how will you personally ensure this project embodies our values of accountability and kindness, especially if we face unexpected challenges that impact our staff and students?",
+                        query: "This is a bold, ambitious vision, which I applaud. But boldness can become recklessness. How will you personally ensure this project also embodies our values of kindness and accountability if we face unexpected challenges that impact our staff and students?",
                         choices: [
                             { text: "Our primary accountability is to the future. We must be bold and accept that transformational change will create discomfort. We'll manage the impacts, but the strategic imperative must drive us forward.", scores: { strategicIntegrity: 1, governanceAdherence: -1, stakeholderCollaboration: -1, deliveryFocus: 2 } },
                             { text: "Through the Steering Committee, which I will chair. We will establish a dedicated workstream for ethical implementation and community impact, with transparent reporting back to this group on both progress and challenges.", scores: { strategicIntegrity: 2, governanceAdherence: 2, stakeholderCollaboration: 1, deliveryFocus: 0 } },
@@ -219,7 +219,7 @@
                 advice: "Being a sponsor is tough. You must protect the project's core objectives, even from powerful, well-intentioned stakeholders.",
                 choices: [
                     { text: "Agree in principle. The Dean's support is critical, and the feature is popular. You ask the PM to start analysis immediately to show goodwill, while deferring the formal budget conversation.", scores: { strategicIntegrity: -1, governanceAdherence: -1, stakeholderCollaboration: 2, deliveryFocus: -1 } },
-                    { text: "Acknowledge the idea's merit but hold firm. Explain that your primary duty as sponsor is to protect the agreed-upon scope, budget, and timeline for the *entire university*. Offer to champion the idea as a top candidate for Phase 2.", scores: { strategicIntegrity: 1, governanceAdherence: 1, stakeholderCollaboration: -2, deliveryFocus: 1 } },
+                    { text: "Acknowledge the idea's merit but hold firm. Explain that your primary duty as sponsor is to protect the agreed-upon scope, budget, and timeline for the *entire university*. Offer to champion the idea as a top candidate for Phase&nbsp;2.", scores: { strategicIntegrity: 1, governanceAdherence: 1, stakeholderCollaboration: -2, deliveryFocus: 1 } },
                     { text: "Thank the Dean for the valuable input and direct them to the formal change control process. State that any change with budget or timeline impact must be transparently assessed and approved by the Steering Committee as a whole.", scores: { strategicIntegrity: 2, governanceAdherence: 2, stakeholderCollaboration: 1, deliveryFocus: 0 } },
                 ]
             },
@@ -242,7 +242,7 @@
                 scenario: "The project is delivered. The final report shows it was on time and budget, but is tracking to achieve only 60% of the benefits defined in the Business Case. In your final presentation to the Executive Team, you must choose your narrative.",
                 advice: "True leadership is demonstrated in how you handle setbacks. Your accountability now sets the tone for the entire university.",
                 choices: [
-                    { text: 'Frame the outcome as a successful Phase 1 delivery. Highlight the on-time, on-budget achievement and position the benefits gap as the primary objective for a funded Phase 2.', scores: { strategicIntegrity: -1, governanceAdherence: 0, stakeholderCollaboration: 1, deliveryFocus: 1 } },
+                    { text: 'Frame the outcome as a successful Phase 1 delivery. Highlight the on-time, on-budget achievement and position the benefits gap as the primary objective for a funded Phase&nbsp;2.', scores: { strategicIntegrity: -1, governanceAdherence: 0, stakeholderCollaboration: 1, deliveryFocus: 1 } },
                     { text: 'Present a fully transparent report acknowledging the 60% benefits realisation. Take direct accountability and propose a clear, funded recovery plan to achieve the remaining 40%.', scores: { strategicIntegrity: 2, governanceAdherence: 1, stakeholderCollaboration: 2, deliveryFocus: 0 } },
                     { text: "Present a 'lessons learned' analysis, attributing the benefits gap to external market shifts and initial forecasting assumptions. Recommend the university refine its benefits forecasting model for future projects.", scores: { strategicIntegrity: 0, governanceAdherence: 1, stakeholderCollaboration: -1, deliveryFocus: -1 } },
                 ]
@@ -415,29 +415,72 @@
             const highest = sortedScores[3][0];
         
             if (highest === 'governanceAdherence' && lowest === 'deliveryFocus') {
-                return { name: "The Bureaucrat", description: "You prioritize process and governance above all. While this ensures compliance, it can sometimes stifle innovation and slow down delivery.", feedback: "Your strong focus on governance is commendable for risk management. To increase your effectiveness, consider when 'good enough' governance can enable faster progress. Review the PPMF's guidance on tailoring project governance (Section 3.2)." };
+                return { name: "The Bureaucrat", description: "You prioritize process and governance above all. While this ensures compliance, it can sometimes stifle innovation and slow down delivery." };
             }
             if (highest === 'deliveryFocus') {
-                 return { name: "The Driver", description: "You are relentlessly focused on getting the project delivered. This can be highly effective, but may come at the cost of stakeholder alignment or strategic integrity if not balanced.", feedback: "Your drive for results is a key asset. To ensure long-term success, balance this with robust stakeholder engagement. Review the PPMF's Stakeholder Management guidelines (Section 4.1)." };
+                 return { name: "The Driver", description: "You are relentlessly focused on getting the project delivered. This can be highly effective, but may come at the cost of stakeholder alignment or strategic integrity if not balanced." };
             }
             if (highest === 'stakeholderCollaboration' && lowest === 'strategicIntegrity') {
-                return { name: "The Populist", description: "You excel at building consensus and keeping stakeholders happy. You may risk compromising the project's core strategic goals to appease everyone.", feedback: "Your collaborative skills are excellent for building support. Ensure this consensus serves the original strategic intent. Revisit the PPMF's guidance on Business Case development (Section 5.1)." };
+                return { name: "The Populist", description: "You excel at building consensus and keeping stakeholders happy. You may risk compromising the project's core strategic goals to appease everyone." };
             }
              if (highest === 'strategicIntegrity' && scores.stakeholderCollaboration > 6) {
-                return { name: "The Statesperson", description: "You maintain a balanced and strategic view, effectively navigating governance, stakeholder needs, and delivery pressures while keeping the ultimate goal in sight.", feedback: "You have demonstrated a strong, balanced approach. To further hone your skills, focus on the advanced risk management techniques in the PPMF (Section 6)." };
+                return { name: "The Statesperson", description: "You maintain a balanced and strategic view, effectively navigating governance, stakeholder needs, and delivery pressures while keeping the ultimate goal in sight." };
             }
         
-            return { name: "The Pragmatist", description: "You are a balanced sponsor, adapting your style to the situation. You weigh the various demands of strategy, governance, and delivery to find a workable path forward.", feedback: "Your balanced approach is effective. Focus on proactively communicating your decision-making framework. The PPMF's section on Governance and Reporting (Section 3.4) offers tools to structure this communication." };
+            return { name: "The Pragmatist", description: "You are a balanced sponsor, adapting your style to the situation. You weigh the various demands of strategy, governance, and delivery to find a workable path forward." };
         }
 
         function renderFinalReport() {
             const { scores } = gameState;
             const archetype = determineArchetype(scores);
 
+            const sortedScores = Object.entries(scores).sort(([, a], [, b]) => a - b);
+            const lowestScoreKey = sortedScores[0][0];
+            const lowestScoreValue = sortedScores[0][1];
+
+            let feedbackHeading = '';
+            let feedbackIcon = '';
+            let feedbackText = '';
+            const DEV_THRESHOLD = 5;
+
+            const feedbackTemplates = {
+                deliveryFocus: {
+                    icon: 'fa-rocket',
+                    text: 'As a Sponsor, a key part of your role is to remove blockers (PPMF Section 2.1). Proactively ask your Project Manager "What do you need from me to go faster?" and use your authority to resolve issues swiftly. Championing an agile mindset can help the team prioritise progress over perfection.'
+                },
+                strategicIntegrity: {
+                    icon: 'fa-bullseye',
+                    text: 'An effective Sponsor is the guardian of the project\'s value. Constantly ask "How does this decision serve our original strategic intent?". Revisit the Business Case (PPMF Section 5.1) often and use it as your compass when making difficult choices.'
+                },
+                governanceAdherence: {
+                    icon: 'fa-gavel',
+                    text: 'While speed is important, governance is the safety net that protects you and the university. Trust the PPMF processes; they are designed to ensure transparency and manage risk. Your role includes chairing the Steering Committee (PPMF Section 3.3) and using it to enforce decisions, not bypass them.'
+                },
+                stakeholderCollaboration: {
+                    icon: 'fa-users',
+                    text: 'A project\'s success depends on broad support. As Sponsor, you must build coalitions. Invest time in understanding the needs and concerns of other leaders. Review the Stakeholder Management guidelines (PPMF Section 4.1) to ensure you are communicating effectively and building strong relationships.'
+                }
+            };
+            
+            const competencyLabels = { 
+                strategicIntegrity: 'Strategic Integrity', 
+                governanceAdherence: 'Governance Adherence', 
+                stakeholderCollaboration: 'Stakeholder Collaboration', 
+                deliveryFocus: 'Delivery Focus' 
+            };
+
+            if (lowestScoreValue < DEV_THRESHOLD) {
+                feedbackHeading = `Your Area for Development: <strong>${competencyLabels[lowestScoreKey]}</strong>`;
+                feedbackIcon = feedbackTemplates[lowestScoreKey].icon;
+                feedbackText = feedbackTemplates[lowestScoreKey].text;
+            } else {
+                feedbackHeading = 'Your Sponsor Obligations';
+                feedbackIcon = 'fa-star'; // A positive icon
+                feedbackText = 'You\'ve demonstrated a well-rounded sponsorship approach. Remember your core obligations: Champion the vision, govern effectively, remove blockers, and own the outcome. Your active leadership is the single biggest predictor of project success. Continue to guide your initiatives with this strategic clarity and commitment.';
+            }
+
             const scoreBars = Object.entries(scores).map(([key, value]) => {
-                const labels = { strategicIntegrity: 'Strategic Integrity', governanceAdherence: 'Governance Adherence', stakeholderCollaboration: 'Stakeholder Collaboration', deliveryFocus: 'Delivery Focus' };
                 const colors = { strategicIntegrity: 'bg-blue-500', governanceAdherence: 'bg-[#8CC63F]', stakeholderCollaboration: 'bg-[#FDB913]', deliveryFocus: 'bg-red-500' };
-                // Animate width on render
                 setTimeout(() => {
                     const bar = document.getElementById(`bar-${key}`);
                     if (bar) bar.style.width = `${value * 10}%`;
@@ -445,7 +488,7 @@
                 return `
                     <div class="mb-4">
                         <div class="flex justify-between mb-1">
-                            <span class="text-base font-medium text-white">${labels[key]}</span>
+                            <span class="text-base font-medium text-white">${competencyLabels[key]}</span>
                             <span class="text-sm font-medium text-white">${value}/10</span>
                         </div>
                         <div class="w-full bg-gray-700/50 rounded-full h-4">
@@ -463,12 +506,14 @@
                             <h3 class="text-2xl font-display font-bold mb-4 text-white">Sponsor Competency Scores:</h3>
                             ${scoreBars}
                         </div>
-                        <div class="bg-black/30 p-6 rounded-lg border border-gray-700/50">
-                            <h3 class="text-2xl font-display font-bold mb-2 text-white">Your Archetype: <span class="text-[#FDB913]">${archetype.name}</span></h3>
-                            <p class="text-gray-200 mb-4">${archetype.description}</p>
-                            <div class="border-t border-gray-600/50 pt-4">
-                                <h4 class="font-bold text-lg mb-2 text-white"><i class="fas fa-book-open mr-2 text-[#8CC63F]"></i>Personalised PPMF Guidance:</h4>
-                                <p class="text-gray-200">${archetype.feedback}</p>
+                        <div class="bg-black/30 p-6 rounded-lg border border-gray-700/50 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-2xl font-display font-bold mb-2 text-white">Your Archetype: <span class="text-[#FDB913]">${archetype.name}</span></h3>
+                                <p class="text-gray-200 mb-4">${archetype.description}</p>
+                            </div>
+                            <div class="border-t border-gray-600/50 pt-4 mt-4">
+                                <h4 class="font-bold text-lg mb-2 text-white"><i class="fas ${feedbackIcon} mr-2 text-[#8CC63F]"></i>${feedbackHeading}</h4>
+                                <p class="text-gray-200">${feedbackText}</p>
                             </div>
                         </div>
                     </div>
